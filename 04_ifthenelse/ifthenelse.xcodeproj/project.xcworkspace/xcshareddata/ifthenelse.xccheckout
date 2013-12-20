@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E3F0328C-3687-4850-8F7B-F12025BC24B9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ifthenelse</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>ABC1EF8E-1A5E-4A2B-BBCA-E7DCF4C94EA2</key>
+		<string>https://github.com/jmartino/Big-Nerd-Ranch-ObjectiveC.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>04_ifthenelse/ifthenelse.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>ABC1EF8E-1A5E-4A2B-BBCA-E7DCF4C94EA2</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jmartino/Big-Nerd-Ranch-ObjectiveC.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>ABC1EF8E-1A5E-4A2B-BBCA-E7DCF4C94EA2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>ABC1EF8E-1A5E-4A2B-BBCA-E7DCF4C94EA2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Big-Nerd-Ranch-ObjectiveC</string>
+		</dict>
+	</array>
+</dict>
+</plist>
