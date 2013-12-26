@@ -17,14 +17,14 @@
 - (float)costInDollars
 {
    // return purchaseSharePrice * numberOfShares ;
-    float c = [self numberOfShares]*[self purchaseSharePrice];
-    return c;
+    return [self purchaseSharePrice] * [ self numberOfShares];
+    
 }
 - (float)valueInDollars
 {
     //return currentSharePrice * numberOfShares;
-    float v = [self currentSharePrice] * [self numberOfShares];
-    return v;
+    return [self currentSharePrice] * [self numberOfShares];
+    
 }
 
 @end
