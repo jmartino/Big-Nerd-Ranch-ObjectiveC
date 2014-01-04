@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Stocks/BNRForeignStockHolding.m"
-            timestampString = "409713323.40268"
+            timestampString = "410494865.67357"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
             landmarkName = "@implementation BNRForeignStockHolding"
             landmarkType = "3">
          </BreakpointContent>

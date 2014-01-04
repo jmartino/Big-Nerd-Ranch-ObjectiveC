@@ -13,6 +13,7 @@
 
 @property float purchaseSharePrice, currentSharePrice;
 @property int numberOfShares;
+@property (nonatomic, copy) NSString *tickerSymbol;
     
 
 //calculation methods
