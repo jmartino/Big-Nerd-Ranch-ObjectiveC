@@ -51,6 +51,7 @@ int main(int argc, const char * argv[])
         [portfolioUS addHoldings:goog];
         [portfolioUS addHoldings:ibm];
         [portfolioForeign addHoldings:phg];
+        //[portfolioUS removeHoldings:ibm];
         
         for (BNRStockHolding *s in stockList){
 //            NSLog(@"purchaseSharePrice %.2f, currentSharePrice %.2f, numberOfShares %d, costInDollars %.2f,valueInDollars %.2f",[s purchaseSharePrice], [s currentSharePrice], [s numberOfShares], [s costInDollars],[s valueInDollars]);

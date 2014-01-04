@@ -10,14 +10,15 @@
 @class BNRStockHolding;
 
 @interface BNRPortfolio : NSObject
-{
-    NSMutableArray *_holdings;
-}
+//{
+//    NSMutableArray *_holdings;
+//}
 
 @property (nonatomic, copy) NSArray *holdings;
 @property (nonatomic) float currentValue;
 
 -(void)addHoldings:(BNRStockHolding *)h;
+-(void)removeHoldings:(BNRStockHolding *)h;
 -(float)currentValue;
 
 @end

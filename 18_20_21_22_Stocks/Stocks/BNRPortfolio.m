@@ -9,7 +9,17 @@
 #import "BNRPortfolio.h"
 #import "BNRStockHolding.h"
 
+//a class extensions
+@interface BNRPortfolio ()
+{
+    NSMutableArray *_holdings;
+}
+
+
+@end
+
 @implementation BNRPortfolio
+
 
 //accessors for holding properties
 - (void)setHoldings:(NSArray *)h
@@ -32,6 +42,18 @@
         _holdings = [[NSMutableArray alloc] init];
     }
     [_holdings addObject:h];
+}
+
+-(void)removeHoldings:(BNRStockHolding *)h
+{
+    //is holidngs non nil?
+    if (_holdings)
+    {
+        //create the array
+        //_holdings = [[NSMutableArray alloc] init];
+        [_holdings removeObject:h];
+    }
+    //[_holdings addObject:h];
 }
 
 - (float)currentValue
