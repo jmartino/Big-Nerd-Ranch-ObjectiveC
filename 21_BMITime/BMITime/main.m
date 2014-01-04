@@ -19,6 +19,9 @@ int main(int argc, const char * argv[])
         //create an array of BNREmployee objects
         NSMutableArray *employees = [[NSMutableArray alloc] init];
         
+        //create a dictionary of execs
+        NSMutableDictionary *executives = [[NSMutableDictionary alloc]init];
+        
         for (int i=0; i<10; i++) {
             // create an instance
             BNREmployee *person = [[BNREmployee alloc] init];
@@ -30,6 +33,15 @@ int main(int argc, const char * argv[])
             
             //put the employee in the employess array
             [employees addObject:person];
+            
+            //is this the first employee?
+            if (i==0) {
+                [executives setObject:person forKey:@"CEO"];
+            }
+            //is this the second employess?
+            if (i==1) {
+                [executives setObject:person forKey:@"CTO"];
+            }
             
         }
         
@@ -79,6 +91,13 @@ int main(int argc, const char * argv[])
         
         
         NSLog(@"allAssets: %@", allAssets);
+        
+        //print out the entire dictionary
+        NSLog(@"executives: %@",executives);
+        //print out the ceo's information
+        NSLog(@"CEO: %@", executives[@"CEO"]);
+        
+        executives = nil;
         
         
         NSLog(@"giving up ownership of arrays\n");

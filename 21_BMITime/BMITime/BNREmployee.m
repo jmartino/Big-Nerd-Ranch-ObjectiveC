@@ -27,7 +27,7 @@
     _assets = [a mutableCopy];
 }
 
-- (NSArray *)assets
+- (NSMutableSet *)assets
 {
     return [_assets copy];
 }
@@ -38,7 +38,7 @@
     if (!_assets)
     {
         //create the array
-        _assets = [[NSMutableArray alloc] init];
+        _assets = [[NSMutableSet alloc] init];
     }
     [_assets addObject:a];
     a.holder = self;
