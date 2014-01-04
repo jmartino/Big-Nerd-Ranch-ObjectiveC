@@ -73,14 +73,16 @@ int main(int argc, const char * argv[])
             [randomEmployee addAsset:asset];
             [allAssets addObject:asset];
             
-           NSLog(@"somekind of Array: %@", randomEmployee);
+           
             
             
            
             }
         
       
-        
+        NSSortDescriptor *voa = [NSSortDescriptor sortDescriptorWithKey:@"valueOfAssets" ascending:YES];
+        NSSortDescriptor *eid = [NSSortDescriptor sortDescriptorWithKey:@"employeeID" ascending:YES];
+        [employees sortUsingDescriptors: @[voa, eid]];
         
         NSLog(@"Employees: %@",employees);
         
@@ -99,6 +101,10 @@ int main(int argc, const char * argv[])
         
         executives = nil;
         
+        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"holder.valueOfAssets > 70"];
+        NSArray *toBeReclaimed = [allAssets filteredArrayUsingPredicate:predicate];
+        NSLog(@"toBeReclaimed: %@", toBeReclaimed);
+        toBeReclaimed = nil;
         
         NSLog(@"giving up ownership of arrays\n");
         allAssets  = nil;
@@ -107,8 +113,9 @@ int main(int argc, const char * argv[])
         
         
         
+        
     }
-    sleep(100);
+    //sleep(100);
     return 0;
     
 }

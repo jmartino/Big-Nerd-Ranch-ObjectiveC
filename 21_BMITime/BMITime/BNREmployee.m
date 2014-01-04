@@ -12,7 +12,7 @@
 //a class extension
 @interface BNREmployee ()
 {
-    NSMutableArray *_assets;
+    NSMutableSet *_assets;
 }
 
 @property  (nonatomic) unsigned int officeAlarmCode;
