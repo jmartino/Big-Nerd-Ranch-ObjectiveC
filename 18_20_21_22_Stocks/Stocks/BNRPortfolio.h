@@ -20,5 +20,7 @@
 -(void)addHoldings:(BNRStockHolding *)h;
 -(void)removeHoldings:(BNRStockHolding *)h;
 -(float)currentValue;
+-(NSArray *)topThree;
+-(NSArray *)topSymbol;
 
 @end

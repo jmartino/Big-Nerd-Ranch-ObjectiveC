@@ -59,6 +59,25 @@ int main(int argc, const char * argv[])
             NSLog(@"stock: %@ purchaseSharePrice %.2f, currentSharePrice %.2f, numberOfShares %d, costInDollars %.2f,valueInDollars %.2f\n",s.tickerSymbol,s.purchaseSharePrice, s.currentSharePrice, s.numberOfShares, s.costInDollars, s.valueInDollars);
         }
         NSLog(@"portfolio value: %.2f\n",portfolioForeign.currentValue + portfolioUS.currentValue);
+       
+       
+        NSArray *top = [portfolioUS topThree];
+        NSLog(@"topThree holdings by dollar value: " );
+        for (BNRStockHolding *h in top)
+        {
+            NSLog(@"%@ $%.2f",h.tickerSymbol, h.valueInDollars   );
+        }
+        
+        
+        NSArray *ts = [portfolioUS topSymbol];
+        NSLog(@"topThree holdings by ticker symbol: " );
+        for (BNRStockHolding *h in ts)
+        {
+            NSLog(@"%@ $%.2f",h.tickerSymbol, h.valueInDollars   );
+        }
+        
+      
+        
         
 
         }

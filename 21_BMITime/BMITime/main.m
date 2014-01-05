@@ -85,6 +85,7 @@ int main(int argc, const char * argv[])
         [employees sortUsingDescriptors: @[voa, eid]];
         
         NSLog(@"Employees: %@",employees);
+        //NSLog(@"Top 3 Employees: %@",[employees subarrayWithRange:NSMakeRange(0, 3)]);
         
         
         

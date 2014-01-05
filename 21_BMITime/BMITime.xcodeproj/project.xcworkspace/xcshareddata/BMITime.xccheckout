@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>08FF2F90-1ED4-4199-BFC0-1A4DB86C861A</string>
+	<string>01526CDC-F70D-454C-ADFB-02D5899A2943</string>
 	<key>IDESourceControlProjectName</key>
 	<string>BMITime</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -14,7 +14,7 @@
 		<string>https://github.com/jmartino/Big-Nerd-Ranch-ObjectiveC.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>BMITime/BMITime.xcodeproj/project.xcworkspace</string>
+	<string>21_BMITime/BMITime.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>D6D668A1-21A7-4F44-AB40-8057443CBE0C</key>

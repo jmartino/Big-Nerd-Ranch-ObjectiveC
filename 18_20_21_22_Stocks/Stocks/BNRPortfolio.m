@@ -66,6 +66,32 @@
     return sum;
 }
 
+- (NSArray *)topThree
+{
+    NSSortDescriptor *vid = [NSSortDescriptor sortDescriptorWithKey:@"valueInDollars" ascending:NO];
+    
+    [_holdings sortUsingDescriptors: @[vid]];
+   
+    
+    NSArray *top = [_holdings subarrayWithRange:NSMakeRange(0, 3)];
+   
+
+    return top;
+}
+
+- (NSArray *)topSymbol
+{
+    NSSortDescriptor *ts = [NSSortDescriptor sortDescriptorWithKey:@"tickerSymbol" ascending:YES];
+    
+    [_holdings sortUsingDescriptors: @[ts]];
+    
+    
+    NSArray *topSymbol = [_holdings subarrayWithRange:NSMakeRange(0, 3)];
+    
+    
+    return topSymbol;
+}
+
 - (NSString *)description
 {
     return [NSString stringWithFormat:@"<value: %.2f>", self.currentValue];
